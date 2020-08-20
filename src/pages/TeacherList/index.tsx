@@ -2,6 +2,7 @@ import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
+import Select from '../../components/Select';
 
 
 import './styles.css';
@@ -14,8 +15,33 @@ const TeacherList: React.FC = () => {
         title="Estes são os proffys disponíveis"
       >
         <form action="" id="search-teachers">
-          <Input name="subject" label="Matéria"/>
-          <Input name="week-day" label="Dia da semana"/>
+
+          <Select
+            name="subject"
+            label="Matéria"
+            options={[
+              {value:'Artes', label: 'Artes'},
+              {value:'Ciências', label: 'Ciências'},
+              {value:'Biologia', label: 'Biologia'},
+              {value:'História', label: 'História'},
+              {value:'Português', label: 'Português'},
+            ]}
+          />
+          <Select
+            name="week-day"
+            label="Dia da semana"
+            options={[
+              {value:'0', label: 'Domingo'},
+              {value:'1', label: 'Segunda-feira'},
+              {value:'2', label: 'Terça-feira'},
+              {value:'3', label: 'Quarta-feira'},
+              {value:'4', label: 'Quinta-feira'},
+              {value:'5', label: 'Sexta-feira'},
+              {value:'6', label: 'Sábado'},
+
+            ]}
+          />
+
           <Input type="time" name="time" label="Hora"/>
 
           </form>
