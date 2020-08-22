@@ -6,7 +6,7 @@ import Select from '../../components/Select';
 
 
 import './styles.css';
-import TeacherItem, {TeacherItemProps} from '../../components/TeacherItem';
+import TeacherItem, {Classes} from '../../components/TeacherItem';
 import api from '../../services/api';
 
 
@@ -26,6 +26,7 @@ const TeacherList: React.FC = () => {
         time
       }
     });
+    console.log(response.data);
     setTeachers(response.data);
   }
 
@@ -77,14 +78,15 @@ const TeacherList: React.FC = () => {
           </form>
         </PageHeader>
         <main>
-          {teachers.map((teacher:TeacherItemProps)=>{
-            console.log(teacher)
+          {teachers.map((item:Classes)=>{
+            console.log(item)
             return(
-              <TeacherItem
-                key={teacher.classe.id}
-                teacher={teacher.teacher}
-                classe={teacher.classe}
-              />
+            <TeacherItem
+              key={item.id}
+              classes={item}
+            />
+
+
             )
           })}
         </main>
