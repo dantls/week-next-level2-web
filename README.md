@@ -1,5 +1,5 @@
 <h3 align="center">
-      <img alt="Logo" title="#logo" width="470px" src="">
+      <img src="https://github.com/dantls/week-next-level2-server/blob/master/github-assets/logo.svg" alt="Proffy" />
     <br><br>
     <br>
 </h3>
