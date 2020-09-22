@@ -27,8 +27,8 @@ const TeacherItem: React.FC<TeacherItemProps> = ({classes}) => {
   const {id, avatar,name,bio,whatsapp} =classes.user;
   const {subject,cost} =classes;
 
-  function createNewConnection() {
-    api.post('/connections', {
+  const createNewConnection = async () => {
+    await api.post('/connections', {
       user_id: id,
     })
   }
