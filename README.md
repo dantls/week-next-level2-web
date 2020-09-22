@@ -38,14 +38,6 @@ Libs auxiliares:
   - React-icons
   - React-leaflet
   <br>
-- React Native <br><br>
-Libs auxiliares:
-  - Axios
-  - Expo
-  - Expo-font
-  - React-native-gesture-handler
-
-
 
 
 <h4 align="center">
